@@ -25,6 +25,7 @@ public class DogServiceImpl implements DogService {
         Optional<String> optionalBreed = Optional.ofNullable(dogRepository.findBreedById(id));
         String breed = optionalBreed.orElseThrow(DogNotFoundException::new);
         return breed;
+        // ToDo: fix bug so that customized message "dog not found" is shown
     }
 
     public List<String> retrieveDogNames() {
