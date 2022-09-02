@@ -1,6 +1,10 @@
 # Getting Started
 Simple example demonstrating a REST service for a simple data class <Dog>.
-Implementation based on spring-boot-starter-data-jpa and spring-boot-starter-web
+Implementation based on spring-boot-starter-data-jpa and spring-boot-starter-web.
+Service is secured with [Spring Security](https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter)
+, using default credentials (basic auth) 
+- user=user and 
+- password=password.
 
 Navigate to http://localhost:8080/dogs to see the exposed dog microservice.  
 
