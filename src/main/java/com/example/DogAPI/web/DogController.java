@@ -2,6 +2,8 @@ package com.example.DogAPI.web;
 
 import com.example.DogAPI.entity.Dog;
 import com.example.DogAPI.service.DogService;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,6 +15,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@ApiResponses(value = {
+        @ApiResponse(code=400, message = "Bad Request, please try harder"),
+        @ApiResponse(code=401, message = "No access, please get keys")
+})
 public class DogController {
 
     private DogService dogService;
