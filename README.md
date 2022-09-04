@@ -1,6 +1,7 @@
 # Getting Started
 Simple example demonstrating a REST service for a simple data class <Dog>.
-Implementation based on spring-boot-starter-data-jpa and spring-boot-starter-web.
+Please see [Swagger Docu](http://localhost:8080/swagger-ui.html) for more details.
+REST implementation is based on spring-boot-starter-data-jpa and spring-boot-starter-web.
 Service is secured with [Spring Security](https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter)
 , using default credentials (basic auth) 
 - user=user and 
