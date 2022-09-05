@@ -10,6 +10,9 @@ Service is secured with [Spring Security](https://spring.io/blog/2022/02/21/spri
 Navigate to http://localhost:8080/dogs in a browser to see the exposed dog microservice (after logging in).  
 When using Postman send GET request with Authorization type "basic auth", otherwise "401 Unauthorized" will be answered.
 
+## ToDo: Add tests
+Unfortunately autowiring MockMvc does not work ... 
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
